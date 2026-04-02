@@ -198,7 +198,7 @@ export default function Home() {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/213662250526"
+            href="https://wa.me/213662250526?text=Hello%20I%20want%20to%20start%20my%20brand"
             target="_blank"
             className="bg-black text-white px-6 py-3 rounded-xl"
           >
