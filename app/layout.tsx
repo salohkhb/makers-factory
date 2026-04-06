@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Clothing Manufacturer Algeria | Makers Factory",
+  title: "Makers Factory | Clothing Manufacturer Algeria",
   description:
     "Private label clothing manufacturing in Algeria. Low MOQ, premium quality, streetwear, modest wear, uniforms.",
 };
