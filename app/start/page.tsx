@@ -27,7 +27,7 @@ export default function StartPage() {
     setSuccess(false);
 
     try {
-      const res = await fetch("YOUR_SCRIPT_URL_HERE", {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbzAEoztlJNsE0uaVGoTBnZyxpK-1oxoJRq5f1oruIyoyzVRTED0ikFcTixPvYx8oCYyPw/exec", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -123,9 +123,9 @@ export default function StartPage() {
             className="border p-3 rounded-lg"
           >
             <option value="">Quantity</option>
-            <option>30</option>
-            <option>50</option>
-            <option>100+</option>
+            <option>5</option>
+            <option>15</option>
+            <option>20+</option>
           </select>
 
           <select
