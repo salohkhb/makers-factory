@@ -3,16 +3,17 @@ import { redirect } from "next/navigation";
 
 export default function Home() {
   const headersList = headers();
-  const lang = headersList.get("accept-language");
+  const langHeader = headersList.get("accept-language") || "";
 
-  if (lang?.includes("fr")) {
+  const lang = langHeader.split(",")[0]; // get first language
+
+  if (lang.startsWith("fr")) {
     redirect("/fr");
   }
 
-  if (lang?.includes("ar")) {
+  if (lang.startsWith("ar")) {
     redirect("/ar");
   }
 
-  // default
   redirect("/en");
 }
