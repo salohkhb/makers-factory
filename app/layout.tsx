@@ -15,20 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Makers Factory | Clothing Manufacturer Algeria",
   description:
-    "Private label clothing manufacturing in Algeria. Low MOQ, premium quality, streetwear, modest wear, uniforms.",
+    "Launch your clothing brand in Algeria. Private label manufacturing, low MOQ, premium quality.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body className="bg-white text-black">{children}</body>
     </html>
   );
 }
