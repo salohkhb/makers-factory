@@ -8,9 +8,9 @@ export default function Packages({ data }: any) {
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {data.items.map((p: any, i: number) => (
           <div key={i} className="p-6 border rounded-2xl bg-white shadow">
-            <h3 className="font-bold text-xl mb-2 text-[#080C34]">{p.name}</h3>
+            <h3 className="font-bold text-blue-xl mb-2">{p.name}</h3>
             <p className="text-gray-600 mb-4">{p.desc}</p>
-            <ul className="text-sm mb-4 text-[#080C34]">
+            <ul className="text-blue-sm mb-4">
               {p.features.map((f: string, j: number) => (
                 <li key={j}>✔ {f}</li>
               ))}
