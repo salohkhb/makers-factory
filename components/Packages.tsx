@@ -1,7 +1,7 @@
 export default function Packages({ data }: any) {
   return (
     <section className="py-20 px-6 bg-gray-50">
-      <h2 className="text-blue-3xl font-bold text-center mb-10">
+      <h2 className="text-3xl font-bold text-center mb-10">
         {data.title}
       </h2>
 
