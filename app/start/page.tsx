@@ -21,42 +21,35 @@ export default function StartPage() {
   };
 
   const handleSubmit = async (e: any) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    setLoading(true);
-    setSuccess(false);
+  setLoading(true);
+  setSuccess(false);
 
-    try {
-      const res = await fetch("https://script.google.com/macros/s/AKfycbzAEoztlJNsE0uaVGoTBnZyxpK-1oxoJRq5f1oruIyoyzVRTED0ikFcTixPvYx8oCYyPw/exec", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-      });
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbzAEoztlJNsE0uaVGoTBnZyxpK-1oxoJRq5f1oruIyoyzVRTED0ikFcTixPvYx8oCYyPw/exec", {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify(form),
+    });
 
-      if (!res.ok) {
-        throw new Error("Failed");
-      }
+    setSuccess(true);
 
-      setSuccess(true);
+    setForm({
+      name: "",
+      phone: "",
+      product: "",
+      quantity: "",
+      budget: "",
+      design: "",
+      description: "",
+    });
+  } catch (error) {
+    alert("❌ Error sending form.");
+  }
 
-      // Reset form
-      setForm({
-        name: "",
-        phone: "",
-        product: "",
-        quantity: "",
-        budget: "",
-        design: "",
-        description: "",
-      });
-    } catch (error) {
-      alert("❌ Error sending form. Check connection or script.");
-    }
-
-    setLoading(false);
-  };
+  setLoading(false);
+};
 
   return (
     <main className="min-h-screen flex items-center justify-center px-6 bg-gray-50 text-[#080C34]">
