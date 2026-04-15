@@ -22,7 +22,7 @@ export default function Page() {
               name: "البداية",
               desc: "ابدأ بشكل صغير",
               features: [
-                "30 قطعة",
+                "5 قطعة",
                 "طباعة بسيطة",
                 "ليبل بسيط",
               ],
@@ -31,7 +31,7 @@ export default function Page() {
               name: "النمو",
               desc: "طور ماركتك",
               features: [
-                "50+ قطعة",
+                "15+ قطعة",
                 "جودة أفضل",
                 "ليبل مخصص",
               ],

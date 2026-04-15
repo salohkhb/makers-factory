@@ -24,12 +24,20 @@ export default function StartPage() {
     e.preventDefault();
 
     setLoading(true);
+    setSuccess(false);
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbzAEoztlJNsE0uaVGoTBnZyxpK-1oxoJRq5f1oruIyoyzVRTED0ikFcTixPvYx8oCYyPw/exec", {
+      const res = await fetch("YOUR_SCRIPT_URL_HERE", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(form),
       });
+
+      if (!res.ok) {
+        throw new Error("Failed");
+      }
 
       setSuccess(true);
 
@@ -44,15 +52,15 @@ export default function StartPage() {
         description: "",
       });
     } catch (error) {
-      alert("Something went wrong. Try again.");
+      alert("❌ Error sending form. Check connection or script.");
     }
 
     setLoading(false);
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 bg-gray-50">
-      <div className="w-full max-w-xl bg-white p-8 rounded-2xl shadow">
+    <main className="min-h-screen flex items-center justify-center px-6 bg-gray-50 text-[#080C34]">
+      <div className="w-full max-w-xl bg-white p-8 rounded-2xl shadow-lg">
 
         {/* TITLE */}
         <h1 className="text-3xl font-bold text-center mb-2">
@@ -79,7 +87,7 @@ export default function StartPage() {
             value={form.name}
             onChange={handleChange}
             required
-            className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+            className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#080C34]"
           />
 
           <input
@@ -88,7 +96,7 @@ export default function StartPage() {
             value={form.phone}
             onChange={handleChange}
             required
-            className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+            className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#080C34]"
           />
 
           <select
@@ -157,7 +165,7 @@ export default function StartPage() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-black text-white py-3 rounded-lg hover:opacity-90 transition"
+            className="bg-[#080C34] text-white py-3 rounded-lg hover:opacity-90 transition"
           >
             {loading ? "Sending..." : "Submit & Start"}
           </button>

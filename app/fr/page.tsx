@@ -22,7 +22,7 @@ export default function Page() {
               name: "Starter",
               desc: "Commencez petit",
               features: [
-                "30 pièces",
+                "5 pièces",
                 "Impression simple",
                 "Étiquette basique",
               ],
@@ -31,7 +31,7 @@ export default function Page() {
               name: "Growth",
               desc: "Développez votre marque",
               features: [
-                "50+ pièces",
+                "15+ pièces",
                 "Meilleure qualité",
                 "Étiquettes personnalisées",
               ],

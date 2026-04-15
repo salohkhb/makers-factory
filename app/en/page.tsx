@@ -21,12 +21,12 @@ export default function Page() {
             {
               name: "Starter",
               desc: "Start small",
-              features: ["30 pieces", "Basic print", "Simple label"],
+              features: ["5 pieces", "Basic print", "Simple label"],
             },
             {
               name: "Growth",
               desc: "Scale your brand",
-              features: ["50+ pieces", "Better quality", "Custom labels"],
+              features: ["15+ pieces", "Better quality", "Custom labels"],
             },
             {
               name: "Premium",
