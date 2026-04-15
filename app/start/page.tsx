@@ -129,9 +129,9 @@ export default function StartPage() {
             className="border p-3 rounded-lg"
           >
             <option value="">Budget</option>
-            <option>Less than 50k DA</option>
-            <option>50k - 100k DA</option>
-            <option>100k+ DA</option>
+            <option>Less than 10k DA</option>
+            <option>10k - 50K DA</option>
+            <option>50k+ DA</option>
           </select>
 
           <select
