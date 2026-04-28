@@ -51,19 +51,21 @@ export default function TshirtPage() {
     setLoading(true);
 
     await fetch("https://script.google.com/macros/s/AKfycbzaS-MmcdJa0P4UzRsuqyxD5ZKCpX10M1oHkl-cr7qjlU16abCH18KezKvpm9xWOsaZ/exec", {
-      method: "POST",
-      mode: "no-cors",
-      body: JSON.stringify({
-        ...form,
-        ...options,
-        price: calculatePrice(),
-        total: calculatePrice() * options.quantity,
-      }),
-    });
+  method: "POST",
+  body: new URLSearchParams({
+    name: form.name,
+    phone: form.phone,
+    details: form.details,
 
-    setSuccess(true);
-    setLoading(false);
-  };
+    logo: options.logo ? "YES" : "NO",
+    design: options.design ? "YES" : "NO",
+    designType: options.designType,
+
+    quantity: String(options.quantity),
+    price: String(calculatePrice()),
+    total: String(calculatePrice() * options.quantity),
+  }),
+});
 
   return (
     <main className="bg-white text-[#080C34]">
