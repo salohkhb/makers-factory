@@ -57,15 +57,13 @@ export default function TshirtPage() {
         name: form.name,
         phone: form.phone,
         details: form.details,
-
         logo: options.logo,
         design: options.design,
         designType: options.designType,
-
         quantity: options.quantity,
         price: calculatePrice(),
         total: calculatePrice() * options.quantity,
-      })
+      }),
     });
 
     setSuccess(true);
