@@ -21,7 +21,7 @@ export default function TshirtPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const basePrice = 800;
+  const basePrice = 900;
 
   const calculatePrice = () => {
     let price = basePrice;
