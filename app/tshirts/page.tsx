@@ -93,17 +93,7 @@ export default function TshirtPage() {
         ))}
       </section>
 
-      {/* BEFORE AFTER */}
-      <section className="py-20 text-center px-6">
-        <h2 className="text-3xl font-bold mb-10">
-          Before vs After Branding
-        </h2>
-
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          <Image src="/products/before.jpg" width={500} height={500} alt="before" className="rounded-2xl"/>
-          <Image src="/products/after.jpg" width={500} height={500} alt="after" className="rounded-2xl"/>
-        </div>
-      </section>
+      
 
       {/* CONFIGURATOR */}
       <section className="max-w-2xl mx-auto mt-10 bg-white p-8 rounded-3xl shadow-xl border">
