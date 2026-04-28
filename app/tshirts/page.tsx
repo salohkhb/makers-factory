@@ -50,7 +50,7 @@ export default function TshirtPage() {
     e.preventDefault();
     setLoading(true);
 
-    await fetch("https://script.google.com/macros/s/AKfycbxT3LiU97VZQXFSR0d8t9osKeWxBhMNPRCkyEJKlXXjYIGi3l1zf647ENYlnvihBC8L/exec", {
+    await fetch("https://script.google.com/macros/s/AKfycbzaS-MmcdJa0P4UzRsuqyxD5ZKCpX10M1oHkl-cr7qjlU16abCH18KezKvpm9xWOsaZ/exec", {
         method: "POST",
       body: new URLSearchParams({
         name: form.name,
@@ -66,6 +66,10 @@ export default function TshirtPage() {
         total: String(calculatePrice() * options.quantity),
       }),
     });
+    
+    setSuccess(true);
+    setLoading(false);
+  };
 
   return (
     <main className="bg-white text-[#080C34]">
