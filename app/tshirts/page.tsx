@@ -4,14 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function TshirtPage() {
-  // ================= FORM =================
   const [form, setForm] = useState({
     name: "",
     phone: "",
     details: "",
   });
 
-  // ================= OPTIONS =================
   const [options, setOptions] = useState({
     logo: false,
     design: false,
@@ -23,7 +21,6 @@ export default function TshirtPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  // ================= PRICING =================
   const basePrice = 800;
 
   const calculatePrice = () => {
@@ -45,7 +42,6 @@ export default function TshirtPage() {
     return Math.round(price);
   };
 
-  // ================= HANDLERS =================
   const handleChange = (e: any) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -73,131 +69,187 @@ export default function TshirtPage() {
     <main className="bg-white text-[#080C34]">
 
       {/* HERO */}
-      <section className="text-center py-16">
-        <h1 className="text-4xl font-bold">
-          T-Shirts Printing & Embroidery
+      <section className="text-center py-20 px-6">
+        <h1 className="text-5xl font-bold mb-4">
+          Premium T-Shirts
         </h1>
-        <p className="opacity-70 mt-2">
-          Create your brand with premium quality
+        <p className="text-gray-500 max-w-xl mx-auto">
+          Printing & embroidery for brands. Clean finition, premium quality.
         </p>
       </section>
 
       {/* GALLERY */}
-      <section className="grid md:grid-cols-3 gap-4 px-6 max-w-6xl mx-auto">
+      <section className="grid md:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto">
         {["tshirt1.jpg","tshirt2.jpg","tshirt3.jpg"].map((img, i) => (
-          <Image
-            key={i}
-            src={`/products/${img}`}
-            width={400}
-            height={400}
-            alt="tshirt"
-            className="rounded-xl"
-          />
+          <div key={i} className="overflow-hidden rounded-2xl shadow hover:scale-105 transition">
+            <Image
+              src={`/products/${img}`}
+              width={400}
+              height={400}
+              alt="tshirt"
+              className="object-cover w-full h-full"
+            />
+          </div>
         ))}
       </section>
 
+      {/* BEFORE AFTER */}
+      <section className="py-20 text-center px-6">
+        <h2 className="text-3xl font-bold mb-10">
+          Before vs After Branding
+        </h2>
 
-      {/* PRICING CONFIGURATOR */}
-      <section className="max-w-xl mx-auto bg-gray-50 p-6 rounded-xl">
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <Image src="/products/before.jpg" width={500} height={500} alt="before" className="rounded-2xl"/>
+          <Image src="/products/after.jpg" width={500} height={500} alt="after" className="rounded-2xl"/>
+        </div>
+      </section>
 
-        <h2 className="text-xl font-bold mb-4">
+      {/* CONFIGURATOR */}
+      <section className="max-w-2xl mx-auto mt-10 bg-white p-8 rounded-3xl shadow-xl border">
+
+        <h2 className="text-2xl font-bold mb-8 text-center">
           Customize Your T-Shirt
         </h2>
 
         {/* LOGO */}
-        <label className="block">
-          <input
-            type="checkbox"
-            onChange={(e) =>
-              setOptions({ ...options, logo: e.target.checked })
-            }
-          />
-          Add Logo
-        </label>
+        <div className="mb-6">
+          <label className="flex justify-between items-center">
+            <span className="font-medium">Add Logo</span>
+            <input
+              type="checkbox"
+              className="w-5 h-5 accent-[#080C34]"
+              onChange={(e) =>
+                setOptions({ ...options, logo: e.target.checked })
+              }
+            />
+          </label>
 
-        {options.logo && (
-          <select
-            className="border p-2 w-full mt-2"
-            onChange={(e) =>
-              setOptions({ ...options, logoType: e.target.value })
-            }
-          >
-            <option>Logo Type</option>
-            <option value="print">Print</option>
-            <option value="embroidery">Embroidery</option>
-          </select>
-        )}
-
-        {/* DESIGN */}
-        <label className="block mt-4">
-          <input
-            type="checkbox"
-            onChange={(e) =>
-              setOptions({ ...options, design: e.target.checked })
-            }
-          />
-          Add Design
-        </label>
-
-        {options.design && (
-          <select
-            className="border p-2 w-full mt-2"
-            onChange={(e) =>
-              setOptions({ ...options, designType: e.target.value })
-            }
-          >
-            <option>Design Type</option>
-            <option value="print">Print</option>
-            <option value="embroidery">Embroidery</option>
-          </select>
-        )}
-
-        {/* QUANTITY */}
-        <input
-          type="number"
-          value={options.quantity}
-          min={1}
-          className="border p-2 w-full mt-4"
-          onChange={(e) =>
-            setOptions({ ...options, quantity: Number(e.target.value) })
-          }
-        />
-
-        {/* PRICE */}
-        <div className="mt-4 font-bold text-lg">
-          Price: {calculatePrice()} DA / piece
+          {options.logo && (
+            <select
+              className="w-full mt-3 p-3 border rounded-xl focus:ring-2 focus:ring-[#080C34]"
+              onChange={(e) =>
+                setOptions({ ...options, logoType: e.target.value })
+              }
+            >
+              <option value="">Logo Type</option>
+              <option value="print">Print</option>
+              <option value="embroidery">Embroidery</option>
+            </select>
+          )}
         </div>
 
-        <div className="font-bold text-xl">
-          Total: {calculatePrice() * options.quantity} DA
+        {/* DESIGN */}
+        <div className="mb-6">
+          <label className="flex justify-between items-center">
+            <span className="font-medium">Add Design</span>
+            <input
+              type="checkbox"
+              className="w-5 h-5 accent-[#080C34]"
+              onChange={(e) =>
+                setOptions({ ...options, design: e.target.checked })
+              }
+            />
+          </label>
+
+          {options.design && (
+            <select
+              className="w-full mt-3 p-3 border rounded-xl focus:ring-2 focus:ring-[#080C34]"
+              onChange={(e) =>
+                setOptions({ ...options, designType: e.target.value })
+              }
+            >
+              <option value="">Design Type</option>
+              <option value="print">Print</option>
+              <option value="embroidery">Embroidery</option>
+            </select>
+          )}
+        </div>
+
+        {/* QUANTITY */}
+        <div className="mb-6">
+          <label className="block mb-2 font-medium">Quantity</label>
+          <input
+            type="number"
+            value={options.quantity}
+            min={1}
+            onChange={(e) =>
+              setOptions({ ...options, quantity: Number(e.target.value) })
+            }
+            className="w-full p-3 border rounded-xl focus:ring-2 focus:ring-[#080C34]"
+          />
+        </div>
+
+        {/* PRICE CARD */}
+        <div className="bg-[#080C34] text-white p-6 rounded-2xl text-center">
+          <p className="opacity-80 text-sm">Price per piece</p>
+          <p className="text-3xl font-bold">
+            {calculatePrice()} DA
+          </p>
+
+          <p className="mt-3 opacity-80 text-sm">Total</p>
+          <p className="text-2xl font-semibold">
+            {calculatePrice() * options.quantity} DA
+          </p>
         </div>
 
       </section>
 
       {/* URGENCY */}
-      <section className="bg-[#080C34] text-white text-center py-6 mt-10">
-        Limited production slots available
+      <section className="bg-[#080C34] text-white text-center py-10 mt-16">
+        <h2 className="text-xl font-bold">
+          ⚠️ Limited Production Slots Available
+        </h2>
+        <p className="opacity-80">
+          We only accept a few projects each month
+        </p>
       </section>
 
       {/* FORM */}
-      <section className="max-w-xl mx-auto p-6">
-        {success && <p className="text-green-600">Sent successfully</p>}
+      <section className="max-w-xl mx-auto p-8 mt-10">
+
+        {success && (
+          <p className="text-green-600 text-center mb-4">
+            ✅ Request sent successfully
+          </p>
+        )}
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <input name="name" placeholder="Name" onChange={handleChange} required className="border p-2"/>
-          <input name="phone" placeholder="Phone" onChange={handleChange} required className="border p-2"/>
-          <textarea name="details" placeholder="Details" onChange={handleChange} className="border p-2"/>
 
-          <button className="bg-[#080C34] text-white p-3">
-            {loading ? "Sending..." : "Submit"}
+          <input
+            name="name"
+            placeholder="Your Name"
+            onChange={handleChange}
+            required
+            className="border p-3 rounded-xl focus:ring-2 focus:ring-[#080C34]"
+          />
+
+          <input
+            name="phone"
+            placeholder="WhatsApp Number"
+            onChange={handleChange}
+            required
+            className="border p-3 rounded-xl focus:ring-2 focus:ring-[#080C34]"
+          />
+
+          <textarea
+            name="details"
+            placeholder="Describe your idea"
+            onChange={handleChange}
+            className="border p-3 rounded-xl"
+          />
+
+          <button className="bg-[#080C34] text-white py-3 rounded-xl hover:opacity-90 transition">
+            {loading ? "Sending..." : "Start Your Project"}
           </button>
+
         </form>
       </section>
 
-      {/* WHATSAPP BUTTON */}
+      {/* WHATSAPP FLOATING */}
       <a
-        href="https://wa.me/213662250526"
-        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full"
+        href="https://wa.me/213662250526?text=Salam%20I%20want%20to%20order%20t-shirts"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition"
       >
         💬
       </a>
