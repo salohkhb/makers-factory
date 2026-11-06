@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "homeTitle": "MAKERS | Private-label clothing production in Algeria",
+    "homeDesc": "Request a sample for your clothing brand. MAKERS assigns each product to a specialist workshop in Algeria and stays your single point of contact.",
+    "productsTitle": "Products | MAKERS Algeria",
+    "howTitle": "How it works | MAKERS Algeria",
+    "aboutTitle": "About | MAKERS Algeria",
+    "startTitle": "Request a sample | MAKERS Algeria",
+    "notFoundTitle": "Page not found | MAKERS"
+  },
+  "bar": { "text": "Private label in Algeria: start with a sample", "cta": "WhatsApp" },
+  "nav": {
+    "home": "Home", "products": "Products", "how": "How it works", "about": "About",
+    "cta": "Request a sample", "menu": "Menu", "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Private label · Algeria",
+    "line1": "Your brand. Your identity.",
+    "line2": "Our production.",
+    "text": "Start with a sample, with no production commitment. MAKERS assigns each product to a specialist workshop and stays your single point of contact, from idea to delivery.",
+    "ctaPrimary": "Request a sample",
+    "ctaSecondary": "See the products",
+    "fact1": "1 request", "fact1Sub": "for all your products",
+    "fact2": "1 specialist workshop", "fact2Sub": "per product type",
+    "fact3": "1 contact", "fact3Sub": "MAKERS, from start to finish",
+    "photoNote": "Illustrative photos. Fictional brands."
+  },
+  "products": {
+    "eyebrow": "Our products",
+    "title": "Choose what you want to launch.",
+    "subtitle": "One sample request can cover one product or several.",
+    "details": "View product",
+    "back": "All products",
+    "specsTitle": "Starting specification",
+    "specsNote": "Fabric, sizes and finishes are confirmed on the sample. Price and lead time are given in your quotation.",
+    "customTitle": "Customization options",
+    "request": "Request a sample of this product",
+    "kitBadge": "Technical file ready",
+    "onRequest": "On request",
+    "items": {
+      "t-shirts": {
+        "name": "T-shirts", "desc": "Crew-neck T-shirt, regular fit, for brands, creators and events.",
+        "spec": "100% combed cotton jersey, 200 g/m², sizes XS to XXL.", "custom": "Logo embroidery, DTF printing, labels, packaging."
+      },
+      "hoodies": {
+        "name": "Hoodies", "desc": "Hoodie with lined hood, kangaroo pocket and rib trims, for streetwear and teams.",
+        "spec": "Brushed fleece, 80% cotton / 20% polyester, 320 g/m², sizes XS to XXL.", "custom": "Logo embroidery, printing, labels, packaging."
+      },
+      "tracksuits": {
+        "name": "Tracksuits", "desc": "Matching zip jacket and trousers, for clubs, schools and sports brands.",
+        "spec": "100% polyester tricot, brushed back, 260 g/m², sizes XS to XXL.", "custom": "Logo embroidery on the jacket, option on the leg, labels, packaging."
+      },
+      "corporate-wear": {
+        "name": "Corporate & uniforms", "desc": "Piqué polo and bib apron, for companies, shops and restaurants.",
+        "spec": "Piqué polo, 65% polyester / 35% cotton, 210 g/m². Poly-cotton twill apron, 220 g/m².", "custom": "Logo embroidery, your brand colours, labels."
+      },
+      "linen": {
+        "name": "Linen & light sets", "desc": "Shirts, trousers and light sets for summer collections.",
+        "spec": "Linen or linen-look, composition defined with you.", "custom": "Discreet embroidery, labels, colour choice."
+      },
+      "modest-wear": {
+        "name": "Modest wear & abayas", "desc": "Abayas, long dresses and sets for modest-fashion brands and boutiques.",
+        "spec": "Material, drape and opacity defined with you.", "custom": "Discreet embroidery, labels, lengths and details."
+      }
+    }
+  },
+  "model": {
+    "eyebrow": "Our model",
+    "title": "A specialist workshop for each product.",
+    "subtitle": "Instead of one factory that does everything, we work with workshops chosen for their skill.",
+    "c1Title": "The right workshop", "c1Text": "Each product goes to a workshop that masters it and works from our technical file.",
+    "c2Title": "One contact", "c2Text": "You don't manage workshops or suppliers. MAKERS follows your project and answers your questions.",
+    "c3Title": "Checked quality", "c3Text": "Measurements, seams, logo and finishes are checked on the sample, then on your order.",
+    "c4Title": "Your brand first", "c4Text": "Your designs and logos stay yours. They are never reused or resold."
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "From sample to collection.",
+    "subtitle": "You see and approve the product before production starts.",
+    "s1Title": "Your request", "s1Text": "Fill in one request: your products, your brand, your idea.",
+    "s2Title": "We contact you", "s2Text": "MAKERS clarifies your needs on WhatsApp, then confirms the sample's price and lead time before making it.",
+    "s3Title": "Your sample", "s3Text": "The specialist workshop makes the sample with your logo.",
+    "s4Title": "Your approval", "s4Text": "You check the quality, then receive a quotation for your order.",
+    "s5Title": "Production and delivery", "s5Text": "Once you agree, the workshop produces, MAKERS checks, and you receive your order.",
+    "pageTitle": "How it works",
+    "faqTitle": "Frequently asked questions",
+    "q1": "Is the sample free?", "a1": "The sample's price and lead time depend on the product. We confirm them before making it.",
+    "q2": "What is the minimum quantity?", "a2": "It depends on the product and the workshop, and is stated in the quotation.",
+    "q3": "Can I request several products?", "a3": "Yes. One request is enough, tick every product you are interested in.",
+    "q4": "I don't have a logo yet. Is that a problem?", "a4": "No. Mention it in your request and we'll discuss it with you.",
+    "q5": "Where are the clothes made?", "a5": "At partner workshops in Algeria, selected for each product type."
+  },
+  "cta": {
+    "title": "Ready to see your brand on a real garment?",
+    "text": "One request, with no production commitment. We reply on WhatsApp.",
+    "button": "Request a sample"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "We help new Algerian brands go from idea to product.",
+    "p1": "Launching a clothing brand means finding the right fabric, workshop, embroiderer, labels and packaging. For a creator or a company, that is a lot of people to deal with.",
+    "p2": "MAKERS brings that journey into one point of contact. We prepare the technical files, work with specialist workshops and follow quality while you build your brand.",
+    "whoTitle": "Who is it for?",
+    "who1": "Brand founders", "who1Text": "To launch a first collection.",
+    "who2": "Content creators", "who2Text": "To make clothing for your community.",
+    "who3": "Companies and shops", "who3Text": "For staff clothing and uniforms in your image.",
+    "who4": "Schools, clubs and associations", "who4Text": "For teams and events."
+  },
+  "form": {
+    "eyebrow": "Sample request",
+    "title": "Request your sample",
+    "subtitle": "One request for all your products. It doesn't commit you to any order.",
+    "contact": "Your details",
+    "name": "Full name", "whatsapp": "WhatsApp number", "email": "Email (optional)", "brand": "Brand or company (optional)",
+    "productsLabel": "Which products are you interested in?", "productsError": "Choose at least one product.",
+    "quantity": "Expected quantity later on", "qUnknown": "I don't know yet",
+    "branding": "Your logo", "bEmbroidery": "Embroidery", "bPrint": "Printing", "bUndecided": "Decide together", "bNone": "I don't have a logo yet",
+    "message": "Tell us about your project (optional)",
+    "submit": "Send my request", "sending": "Sending...",
+    "note": "We confirm the sample's price and lead time before making it.",
+    "successTitle": "Your request has been sent.",
+    "successText": "We'll contact you on WhatsApp. To go faster, you can also send us your request directly.",
+    "errorTitle": "Your request didn't go through.",
+    "errorText": "Check your connection and try again, or send your request on WhatsApp.",
+    "whatsappCta": "Send on WhatsApp", "another": "New request", "retry": "Try again"
+  },
+  "footer": {
+    "text": "Private-label clothing production in Algeria, with specialist workshops.",
+    "pages": "Pages", "productsTitle": "Products", "contact": "Contact", "location": "Constantine, Algeria",
+    "rights": "All rights reserved.", "photos": "Illustrative photos. Fictional brands."
+  },
+  "whatsapp": { "default": "Salam MAKERS, I would like to request a sample.", "label": "Message us on WhatsApp" },
+  "notFound": { "title": "Page not found", "text": "This page doesn't exist or has moved.", "home": "Back to home" }
+}

@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "homeTitle": "MAKERS | Marque privée et fabrication de vêtements en Algérie",
+    "homeDesc": "Demandez un échantillon pour votre marque de vêtements. MAKERS confie chaque kit à un atelier spécialisé en Algérie et reste votre interlocuteur unique.",
+    "productsTitle": "Produits | MAKERS Algérie",
+    "howTitle": "Comment ça marche | MAKERS Algérie",
+    "aboutTitle": "À propos | MAKERS Algérie",
+    "startTitle": "Demander un échantillon | MAKERS Algérie",
+    "notFoundTitle": "Page introuvable | MAKERS"
+  },
+  "bar": { "text": "Marque privée en Algérie : commencez par un échantillon", "cta": "WhatsApp" },
+  "nav": {
+    "home": "Accueil", "products": "Produits", "how": "Comment ça marche", "about": "À propos",
+    "cta": "Demander un échantillon", "menu": "Menu", "language": "Langue"
+  },
+  "hero": {
+    "eyebrow": "Marque privée · Algérie",
+    "line1": "Votre marque. Votre identité.",
+    "line2": "Notre production.",
+    "text": "Commencez par un échantillon, sans engagement de production. MAKERS confie chaque produit à un atelier spécialisé et reste votre interlocuteur unique, de l'idée à la livraison.",
+    "ctaPrimary": "Demander un échantillon",
+    "ctaSecondary": "Voir les produits",
+    "fact1": "1 demande", "fact1Sub": "pour tous vos produits",
+    "fact2": "1 atelier spécialisé", "fact2Sub": "par type de produit",
+    "fact3": "1 interlocuteur", "fact3Sub": "MAKERS, du début à la fin",
+    "photoNote": "Photos d'illustration. Marques fictives."
+  },
+  "products": {
+    "eyebrow": "Nos produits",
+    "title": "Choisissez ce que vous voulez lancer.",
+    "subtitle": "Une seule demande d'échantillon peut couvrir un ou plusieurs produits.",
+    "details": "Voir le produit",
+    "back": "Tous les produits",
+    "specsTitle": "Spécification de départ",
+    "specsNote": "Tissu, tailles et finitions sont confirmés sur l'échantillon. Le prix et le délai sont indiqués dans votre devis.",
+    "customTitle": "Personnalisation possible",
+    "request": "Demander un échantillon de ce produit",
+    "kitBadge": "Dossier technique prêt",
+    "onRequest": "Sur demande",
+    "items": {
+      "t-shirts": {
+        "name": "T-shirts", "desc": "T-shirt col rond, coupe regular, pour marques, créateurs et événements.",
+        "spec": "Jersey 100 % coton peigné, 200 g/m², tailles XS à XXL.", "custom": "Broderie de logo, impression DTF, étiquettes, emballage."
+      },
+      "hoodies": {
+        "name": "Hoodies", "desc": "Hoodie à capuche doublée, poche kangourou et bord-côtes, pour le streetwear et les équipes.",
+        "spec": "Molleton gratté 80 % coton / 20 % polyester, 320 g/m², tailles XS à XXL.", "custom": "Broderie de logo, impression, étiquettes, emballage."
+      },
+      "tracksuits": {
+        "name": "Survêtements", "desc": "Ensemble veste zippée et pantalon assortis, pour clubs, écoles et marques sportives.",
+        "spec": "Tricot 100 % polyester, envers gratté, 260 g/m², tailles XS à XXL.", "custom": "Broderie de logo sur la veste, option sur la jambe, étiquettes, emballage."
+      },
+      "corporate-wear": {
+        "name": "Corporate & uniformes", "desc": "Polo en piqué et tablier à bavette, pour entreprises, commerces et restaurants.",
+        "spec": "Polo piqué 65 % polyester / 35 % coton, 210 g/m². Tablier sergé polycoton, 220 g/m².", "custom": "Broderie de logo, couleurs de votre identité, étiquettes."
+      },
+      "linen": {
+        "name": "Lin & ensembles légers", "desc": "Chemises, pantalons et ensembles légers pour les collections d'été.",
+        "spec": "Lin ou aspect lin, composition à définir avec vous.", "custom": "Broderie discrète, étiquettes, choix des couleurs."
+      },
+      "modest-wear": {
+        "name": "Mode modeste & abayas", "desc": "Abayas, robes longues et ensembles pour marques et boutiques de mode modeste.",
+        "spec": "Matière, tombé et opacité à définir avec vous.", "custom": "Broderie discrète, étiquettes, longueurs et détails."
+      }
+    }
+  },
+  "model": {
+    "eyebrow": "Notre modèle",
+    "title": "Un atelier spécialisé pour chaque produit.",
+    "subtitle": "Plutôt qu'une seule usine qui fait tout, nous travaillons avec des ateliers choisis pour leur savoir-faire.",
+    "c1Title": "Le bon atelier", "c1Text": "Chaque produit est confié à un atelier qui le maîtrise et qui travaille selon notre dossier technique.",
+    "c2Title": "Un seul contact", "c2Text": "Vous ne gérez ni les ateliers ni les fournisseurs. MAKERS suit votre projet et répond à vos questions.",
+    "c3Title": "Qualité vérifiée", "c3Text": "Mesures, coutures, logo et finitions sont contrôlés sur l'échantillon, puis sur votre commande.",
+    "c4Title": "Votre marque d'abord", "c4Text": "Vos designs et logos restent à vous. Ils ne sont ni réutilisés ni revendus."
+  },
+  "how": {
+    "eyebrow": "Comment ça marche",
+    "title": "De l'échantillon à votre collection.",
+    "subtitle": "Vous voyez et validez le produit avant de lancer la production.",
+    "s1Title": "Votre demande", "s1Text": "Remplissez une seule demande : vos produits, votre marque, votre idée.",
+    "s2Title": "On vous contacte", "s2Text": "MAKERS précise votre besoin sur WhatsApp, puis confirme le prix et le délai de l'échantillon avant de le réaliser.",
+    "s3Title": "Votre échantillon", "s3Text": "L'atelier spécialisé réalise l'échantillon avec votre logo.",
+    "s4Title": "Votre validation", "s4Text": "Vous vérifiez la qualité. Vous recevez ensuite un devis pour votre commande.",
+    "s5Title": "Production et livraison", "s5Text": "Après votre accord, l'atelier produit, MAKERS contrôle, puis vous recevez votre commande.",
+    "pageTitle": "Comment ça marche",
+    "faqTitle": "Questions fréquentes",
+    "q1": "L'échantillon est-il gratuit ?", "a1": "Le prix et le délai de l'échantillon dépendent du produit. Nous vous les confirmons avant de le réaliser.",
+    "q2": "Quelle quantité minimale ?", "a2": "Elle dépend du produit et de l'atelier. Elle vous est indiquée dans le devis.",
+    "q3": "Puis-je demander plusieurs produits ?", "a3": "Oui. Une seule demande suffit, cochez tous les produits qui vous intéressent.",
+    "q4": "Je n'ai pas encore de logo, est-ce possible ?", "a4": "Oui. Indiquez-le dans votre demande, nous en parlerons avec vous.",
+    "q5": "Où sont fabriqués les vêtements ?", "a5": "Chez des ateliers partenaires en Algérie, sélectionnés pour chaque type de produit."
+  },
+  "cta": {
+    "title": "Prêt à voir votre marque sur un vrai vêtement ?",
+    "text": "Une seule demande, sans engagement de production. Nous vous répondons sur WhatsApp.",
+    "button": "Demander un échantillon"
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "title": "Nous aidons les nouvelles marques algériennes à passer de l'idée au produit.",
+    "p1": "Lancer une marque de vêtements demande de trouver le bon tissu, le bon atelier, le bon brodeur, les étiquettes et l'emballage. Pour un créateur ou une entreprise, cela fait beaucoup d'interlocuteurs.",
+    "p2": "MAKERS réunit ce parcours en un seul point de contact. Nous préparons les dossiers techniques, nous travaillons avec des ateliers spécialisés et nous suivons la qualité, pendant que vous construisez votre marque.",
+    "whoTitle": "Pour qui ?",
+    "who1": "Fondateurs de marques", "who1Text": "Pour lancer une première collection.",
+    "who2": "Créateurs de contenu", "who2Text": "Pour créer des vêtements pour votre communauté.",
+    "who3": "Entreprises et commerces", "who3Text": "Pour des tenues et uniformes à votre image.",
+    "who4": "Écoles, clubs et associations", "who4Text": "Pour les équipes et les événements."
+  },
+  "form": {
+    "eyebrow": "Demande d'échantillon",
+    "title": "Demandez votre échantillon",
+    "subtitle": "Une seule demande pour tous vos produits. Elle ne vous engage à aucune commande.",
+    "contact": "Vos coordonnées",
+    "name": "Nom complet", "whatsapp": "Numéro WhatsApp", "email": "E-mail (facultatif)", "brand": "Marque ou entreprise (facultatif)",
+    "productsLabel": "Quels produits vous intéressent ?", "productsError": "Choisissez au moins un produit.",
+    "quantity": "Quantité prévue pour la suite", "qUnknown": "Je ne sais pas encore",
+    "branding": "Votre logo", "bEmbroidery": "Broderie", "bPrint": "Impression", "bUndecided": "À décider ensemble", "bNone": "Je n'ai pas encore de logo",
+    "message": "Parlez-nous de votre projet (facultatif)",
+    "submit": "Envoyer ma demande", "sending": "Envoi en cours...",
+    "note": "Le prix et le délai de l'échantillon vous sont confirmés avant sa réalisation.",
+    "successTitle": "Votre demande a été envoyée.",
+    "successText": "Nous vous contacterons sur WhatsApp. Pour aller plus vite, vous pouvez aussi nous envoyer votre demande directement.",
+    "errorTitle": "L'envoi n'a pas abouti.",
+    "errorText": "Vérifiez votre connexion et réessayez, ou envoyez votre demande sur WhatsApp.",
+    "whatsappCta": "Envoyer sur WhatsApp", "another": "Nouvelle demande", "retry": "Réessayer"
+  },
+  "footer": {
+    "text": "Marque privée et fabrication de vêtements en Algérie, avec des ateliers spécialisés.",
+    "pages": "Pages", "productsTitle": "Produits", "contact": "Contact", "location": "Constantine, Algérie",
+    "rights": "Tous droits réservés.", "photos": "Photos d'illustration. Marques fictives."
+  },
+  "whatsapp": { "default": "Salam MAKERS, je voudrais demander un échantillon.", "label": "Écrire sur WhatsApp" },
+  "notFound": { "title": "Page introuvable", "text": "Cette page n'existe pas ou a été déplacée.", "home": "Retour à l'accueil" }
+}

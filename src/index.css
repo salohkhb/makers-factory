@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #111424;
+    background-color: #FAF9F5;
+  }
+
+  h1, h2, h3, .font-editorial {
+    letter-spacing: -0.02em;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@keyframes floatGarment {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0.8deg);
+  }
+}
+
+@keyframes floatShadow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(0.88);
+    opacity: 0.2;
+  }
+}
+
+.animate-float-garment {
+  animation: floatGarment 5s ease-in-out infinite;
+}
+
+.animate-float-shadow {
+  animation: floatShadow 5s ease-in-out infinite;
+}
+
+/* Hide scrollbar for category stories */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+[dir='rtl'] body,
+[dir='rtl'] .font-serif-luxury,
+[dir='rtl'] .font-sans-clean {
+  font-family: 'Noto Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-garment,
+  .animate-float-shadow {
+    animation: none;
+  }
+}
